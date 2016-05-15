@@ -5,6 +5,6 @@ install:
   - pip install -r requirements.txt
   - pip install coveralls
 script:
-  coverage run --source=linkbox linkbox/manage.py test linkbox
+  coverage run --source=postero postero/manage.py test postero
 after_success:
   coveralls
